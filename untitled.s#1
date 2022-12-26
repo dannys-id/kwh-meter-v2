@@ -19352,7 +19352,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </instance>
 <instance part="220" gate="G$1" x="223.52" y="139.7" smashed="yes"/>
 <instance part="PZEM" gate="G$1" x="174.39433125" y="145.571615625" smashed="yes"/>
-<instance part="RELAY" gate="G$1" x="236.22" y="106.68" smashed="yes" rot="R180"/>
+<instance part="RELAY" gate="G$1" x="228.6" y="106.68" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -19549,7 +19549,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="236.22" y1="116.84" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="116.84" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$0" pin="1"/>
 <wire x1="119.38" y1="157.48" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
@@ -19568,12 +19567,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="193.04" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="152.4" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 <junction x="190.5" y="157.48"/>
-<pinref part="RELAY" gate="G$1" pin="P$2"/>
-<wire x1="236.22" y1="109.22" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="PZEM" gate="G$1" pin="P$1"/>
 <wire x1="174.39433125" y1="148.111615625" x2="170.18" y2="148.111615625" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="148.111615625" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 <junction x="170.18" y="157.48"/>
+<pinref part="RELAY" gate="G$1" pin="P$1"/>
+<wire x1="228.6" y1="109.22" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="116.84" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -19590,9 +19590,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="K1" gate="G$1" pin="NC"/>
 <wire x1="210.82" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="106.68" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="RELAY" gate="G$1" pin="P$1"/>
-<wire x1="236.22" y1="104.14" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="96.52" x2="228.6" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="RELAY" gate="G$1" pin="P$2"/>
+<wire x1="228.6" y1="96.52" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
