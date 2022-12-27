@@ -19424,6 +19424,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U$7" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$8" library="fuse3d" library_urn="urn:adsk.eagle:library:37042915" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:37042917/2"/>
 <part name="K2" library="fuse13d" library_urn="urn:adsk.eagle:library:37044086" deviceset="SSR-40DA-H" device="" package3d_urn="urn:adsk.eagle:package:37044088/2" value="SSR-40DA-H"/>
+<part name="U$9" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
+<part name="U$10" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -19512,6 +19514,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="K2" gate="G$1" x="195.58" y="99.06" smashed="yes">
 <attribute name="NAME" x="193.04" y="109.728" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="U$9" gate="G$1" x="210.82" y="106.68" smashed="yes"/>
+<instance part="U$10" gate="G$1" x="210.82" y="101.6" smashed="yes"/>
 </instances>
 <busses>
 </busses>
