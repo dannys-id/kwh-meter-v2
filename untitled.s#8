@@ -19287,22 +19287,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:37043655">
-<description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
-This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<library name="fuse13d" urn="urn:adsk.eagle:library:37044086">
 <packages>
-<package name="SSR-40DA-H" urn="urn:adsk.eagle:footprint:37043725/1" library_version="1" library_locally_modified="yes">
+<package name="SSR-40DA-H" urn="urn:adsk.eagle:footprint:37043725/2" library_version="1" library_locally_modified="yes">
 <wire x1="-30" y1="22.5" x2="30" y2="22.5" width="0.127" layer="21"/>
 <wire x1="30" y1="22.5" x2="30" y2="-22.5" width="0.127" layer="21"/>
 <wire x1="30" y1="-22.5" x2="-30" y2="-22.5" width="0.127" layer="21"/>
@@ -19335,21 +19322,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-31.925" y="-0.095" radius="0.2828" width="0.127" layer="51"/>
 <text x="-3" y="23" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-3" y="-25" size="1.27" layer="27" font="vector">&gt;Value</text>
-<pad name="4" x="-34.925" y="1.905" drill="1.2" diameter="2.032" shape="square" rot="R270"/>
-<pad name="3" x="-34.925" y="-1.595" drill="1.2" diameter="2.032" rot="R270"/>
+<pad name="4" x="-34.925" y="1.905" drill="1.2" diameter="2.032" rot="R270"/>
+<pad name="3" x="-34.925" y="-1.595" drill="1.2" diameter="2.032" shape="square" rot="R270"/>
 <pad name="H1" x="-23.5" y="0" drill="3.73" diameter="5.6"/>
 <pad name="H2" x="23.49" y="0" drill="3.73" diameter="5.6"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="SSR-40DA-H" urn="urn:adsk.eagle:package:37043769/2" type="model" library_version="1" library_locally_modified="yes">
+<package3d name="SSR-40DA-H" urn="urn:adsk.eagle:package:37044088/2" type="model" library_version="1" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SSR-40DA-H"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="SSR-40DA-H" urn="urn:adsk.eagle:symbol:37043657/1" library_version="1" library_locally_modified="yes">
+<symbol name="SSR-40DA-H" urn="urn:adsk.eagle:symbol:37044087/1" library_version="1" library_locally_modified="yes">
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
@@ -19383,11 +19370,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SOLID_STATE_RELAY_SSR-40DA-H" urn="urn:adsk.eagle:component:37043814/1" locally_modified="yes" prefix="K" library_version="1" library_locally_modified="yes">
-<description>&lt;h3&gt;Fotek SSR-40DA-H DC-&gt;AC Solid State Relay&lt;/h3&gt;
-&lt;p&gt;This particular SSR can switch current loads of up to 40A with a 3-32V DC input and a zero cross trigger control method. Each one of these relays is equipped with four screw terminals (for use with ring or fork connectors) and a plastic cover that slides over the top of the relay to protect the terminals.&lt;/p&gt;</description>
+<deviceset name="SSR-40DA-H" urn="urn:adsk.eagle:component:37044089/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
 <gates>
-<gate name="G$1" symbol="SSR-40DA-H" x="0" y="0"/>
+<gate name="G$1" symbol="SSR-40DA-H" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="SSR-40DA-H">
@@ -19396,13 +19381,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="-" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37043769/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37044088/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-15116, CONN-08399, 2 x HW-15038" constant="no"/>
-<attribute name="VALUE" value="Solid State Relay - 40A" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -19441,7 +19423,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$6" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$7" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$8" library="fuse3d" library_urn="urn:adsk.eagle:library:37042915" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:37042917/2"/>
-<part name="K2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:37043655" deviceset="SOLID_STATE_RELAY_SSR-40DA-H" device="" package3d_urn="urn:adsk.eagle:package:37043769/2" value="Solid State Relay - 40A"/>
+<part name="K2" library="fuse13d" library_urn="urn:adsk.eagle:library:37044086" deviceset="SSR-40DA-H" device="" package3d_urn="urn:adsk.eagle:package:37044088/2" value="SSR-40DA-H"/>
 </parts>
 <sheets>
 <sheet>
@@ -19529,7 +19511,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$8" gate="G$1" x="205.74" y="152.4" smashed="yes"/>
 <instance part="K2" gate="G$1" x="195.58" y="99.06" smashed="yes">
 <attribute name="NAME" x="193.04" y="109.728" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="193.04" y="91.44" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
