@@ -12568,16 +12568,16 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <library name="bme280">
 <packages>
 <package name="BPM180">
-<wire x1="0" y1="0" x2="0" y2="20" width="0.127" layer="21"/>
-<wire x1="0" y1="20" x2="17.78" y2="20" width="0.127" layer="21"/>
-<wire x1="17.78" y1="20" x2="17.78" y2="0" width="0.127" layer="21"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$1" x="2.54" y="2.54" drill="0.8" diameter="1.9304"/>
-<pad name="P$2" x="5.08" y="2.54" drill="0.8" diameter="1.9304"/>
-<pad name="P$3" x="7.62" y="2.54" drill="0.8" diameter="1.9304"/>
-<pad name="P$4" x="10.16" y="2.54" drill="0.8" diameter="1.9304"/>
-<pad name="P$5" x="12.7" y="2.54" drill="0.8" diameter="1.9304"/>
-<pad name="P$6" x="15.24" y="2.54" drill="0.8" diameter="1.9304"/>
+<wire x1="0" y1="0" x2="0" y2="12" width="0.127" layer="21"/>
+<wire x1="0" y1="12" x2="16" y2="12" width="0.127" layer="21"/>
+<wire x1="16" y1="12" x2="16" y2="0" width="0.127" layer="21"/>
+<wire x1="16" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="1.27" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$2" x="3.81" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$3" x="6.35" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$4" x="8.89" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$5" x="11.43" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$6" x="13.97" y="2.54" drill="0.8" diameter="1.9304"/>
 </package>
 </packages>
 <symbols>

@@ -10205,22 +10205,8 @@ Created by Upverter.com</description>
 <wire x1="30" y1="0" x2="30" y2="15" width="0.127" layer="21"/>
 <pad name="P$1" x="15" y="21.05" drill="2.6" diameter="4.5"/>
 <pad name="P$2" x="15" y="-6.08" drill="2.6" diameter="4.5"/>
-<wire x1="12.5" y1="16" x2="17.5" y2="16" width="0.127" layer="46"/>
-<wire x1="17.5" y1="16" x2="17.5" y2="18" width="0.127" layer="46"/>
-<wire x1="17.5" y1="18" x2="12.5" y2="18" width="0.127" layer="46"/>
-<wire x1="12.5" y1="18" x2="12.5" y2="16" width="0.127" layer="46"/>
-<wire x1="12.5" y1="-1" x2="17.5" y2="-1" width="0.127" layer="46"/>
-<wire x1="17.5" y1="-1" x2="17.5" y2="-3" width="0.127" layer="46"/>
-<wire x1="17.5" y1="-3" x2="12.5" y2="-3" width="0.127" layer="46"/>
-<wire x1="12.5" y1="-3" x2="12.5" y2="-1" width="0.127" layer="46"/>
-<wire x1="12.5" y1="18" x2="17.5" y2="18" width="0.127" layer="20"/>
-<wire x1="17.5" y1="18" x2="17.5" y2="16" width="0.127" layer="20"/>
-<wire x1="17.5" y1="16" x2="12.5" y2="16" width="0.127" layer="20"/>
-<wire x1="12.5" y1="16" x2="12.5" y2="18" width="0.127" layer="20"/>
-<wire x1="12.5" y1="-1" x2="17.5" y2="-1" width="0.127" layer="20"/>
-<wire x1="17.5" y1="-1" x2="17.5" y2="-3" width="0.127" layer="20"/>
-<wire x1="17.5" y1="-3" x2="12.5" y2="-3" width="0.127" layer="20"/>
-<wire x1="12.5" y1="-3" x2="12.5" y2="-1" width="0.127" layer="20"/>
+<pad name="P$3" x="15" y="15.97" drill="2.6" diameter="4.5"/>
+<pad name="P$4" x="15" y="-1" drill="2.6" diameter="4.5"/>
 </package>
 </packages>
 <packages3d>

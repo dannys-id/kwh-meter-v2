@@ -12667,7 +12667,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <part name="U$2" library="TOROID" library_urn="urn:adsk.eagle:library:36786882" deviceset="TOROID" device="" package3d_urn="urn:adsk.eagle:package:36786885/2"/>
 <part name="U$3" library="pzem30mmm" library_urn="urn:adsk.eagle:library:37023797" deviceset="PZEM" device="" package3d_urn="urn:adsk.eagle:package:37023800/4"/>
 <part name="U$4" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
-<part name="U$5" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$6" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$7" library="spacer" library_urn="urn:adsk.eagle:library:37023739" deviceset="SAPCER" device="" package3d_urn="urn:adsk.eagle:package:37023742/2"/>
 <part name="U$8" library="fuse3d" library_urn="urn:adsk.eagle:library:37042915" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:37042917/2"/>
@@ -12720,7 +12719,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <instance part="U$2" gate="G$1" x="144.78" y="139.7" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="55.88" y="27.94" smashed="yes" rot="R90"/>
 <instance part="U$4" gate="G$1" x="81.28" y="35.56" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="81.28" y="33.02" smashed="yes"/>
 <instance part="U$6" gate="G$1" x="81.28" y="30.48" smashed="yes"/>
 <instance part="U$7" gate="G$1" x="81.28" y="27.94" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="205.74" y="152.4" smashed="yes" rot="R180"/>

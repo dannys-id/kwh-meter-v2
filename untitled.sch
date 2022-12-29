@@ -12643,8 +12643,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <part name="220" library="kf76" library_urn="urn:adsk.eagle:library:37092210" deviceset="KF76" device="" package3d_urn="urn:adsk.eagle:package:37092213/3"/>
 <part name="PZEM" library="kf76" library_urn="urn:adsk.eagle:library:37092210" deviceset="KF76" device="" package3d_urn="urn:adsk.eagle:package:37092213/3"/>
 <part name="LCD1" library="lcd_2x16_led_backlight" deviceset="LCD_2X16_SIL" device=""/>
-<part name="X1" library="ak5002" deviceset="AK500/2-H" device="" package3d_urn="urn:adsk.eagle:package:36988949/3"/>
-<part name="X3" library="ak5002" deviceset="AK500/2-H" device="" package3d_urn="urn:adsk.eagle:package:36988949/3"/>
+<part name="P1" library="ak5002" deviceset="AK500/2-H" device="" package3d_urn="urn:adsk.eagle:package:36988949/3"/>
+<part name="P2" library="ak5002" deviceset="AK500/2-H" device="" package3d_urn="urn:adsk.eagle:package:36988949/3"/>
 <part name="1" library="kf76" library_urn="urn:adsk.eagle:library:37092210" deviceset="KF76" device="" package3d_urn="urn:adsk.eagle:package:37092213/3"/>
 <part name="U$5" library="ESP32-DEVKITV1" deviceset="ESP32DEVKITV1" device=""/>
 <part name="BME280" library="bme280" deviceset="BMP180" device=""/>
@@ -12695,17 +12695,17 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <instance part="LCD1" gate="G$1" x="142.24" y="83.82" smashed="yes">
 <attribute name="NAME" x="134.62" y="40.64" size="1.27" layer="95"/>
 </instance>
-<instance part="X1" gate="-1" x="180.34" y="99.06" smashed="yes" rot="R180">
+<instance part="P1" gate="-1" x="180.34" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="98.171" size="1.778" layer="95"/>
 </instance>
-<instance part="X1" gate="-2" x="180.34" y="104.14" smashed="yes" rot="R180">
+<instance part="P1" gate="-2" x="180.34" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="103.251" size="1.778" layer="95"/>
 <attribute name="VALUE" x="184.15" y="107.823" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X3" gate="-1" x="180.34" y="83.82" smashed="yes" rot="R180">
+<instance part="P2" gate="-1" x="180.34" y="83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="82.931" size="1.778" layer="95"/>
 </instance>
-<instance part="X3" gate="-2" x="180.34" y="88.9" smashed="yes" rot="R180">
+<instance part="P2" gate="-2" x="180.34" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="88.011" size="1.778" layer="95"/>
 <attribute name="VALUE" x="184.15" y="92.583" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -12827,12 +12827,12 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <label x="101.6" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="P1" gate="-1" pin="KL"/>
 <wire x1="175.26" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
 <label x="172.72" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="KL"/>
+<pinref part="P2" gate="-1" pin="KL"/>
 <wire x1="175.26" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
 <label x="172.72" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -12925,7 +12925,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 </net>
 <net name="D3" class="0">
 <segment>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="P1" gate="-2" pin="KL"/>
 <wire x1="175.26" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <label x="162.56" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -12937,7 +12937,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 </net>
 <net name="D4" class="0">
 <segment>
-<pinref part="X3" gate="-2" pin="KL"/>
+<pinref part="P2" gate="-2" pin="KL"/>
 <wire x1="175.26" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="162.56" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
