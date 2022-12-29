@@ -12565,6 +12565,59 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="bme280">
+<packages>
+<package name="BPM180">
+<wire x1="0" y1="0" x2="0" y2="12" width="0.127" layer="21"/>
+<wire x1="0" y1="12" x2="16" y2="12" width="0.127" layer="21"/>
+<wire x1="16" y1="12" x2="16" y2="0" width="0.127" layer="21"/>
+<wire x1="16" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="1.27" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$2" x="3.81" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$3" x="6.35" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$4" x="8.89" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$5" x="11.43" y="2.54" drill="0.8" diameter="1.9304"/>
+<pad name="P$6" x="13.97" y="2.54" drill="0.8" diameter="1.9304"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BMP180">
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="VCC" x="-15.24" y="12.7" length="middle"/>
+<pin name="GND" x="-15.24" y="7.62" length="middle"/>
+<pin name="SCL" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA" x="-15.24" y="-2.54" length="middle"/>
+<pin name="CSB" x="-15.24" y="-7.62" length="middle"/>
+<pin name="SDO" x="-15.24" y="-12.7" length="middle"/>
+<text x="-10.16" y="17.78" size="1.778" layer="95">&gt;NAMES</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BMP180">
+<gates>
+<gate name="G$1" symbol="BMP180" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BPM180">
+<connects>
+<connect gate="G$1" pin="CSB" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="SCL" pad="P$3"/>
+<connect gate="G$1" pin="SDA" pad="P$4"/>
+<connect gate="G$1" pin="SDO" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12594,6 +12647,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <part name="X3" library="ak5002" deviceset="AK500/2-H" device="" package3d_urn="urn:adsk.eagle:package:36988949/3"/>
 <part name="1" library="kf76" library_urn="urn:adsk.eagle:library:37092210" deviceset="KF76" device="" package3d_urn="urn:adsk.eagle:package:37092213/3"/>
 <part name="U$5" library="ESP32-DEVKITV1" deviceset="ESP32DEVKITV1" device=""/>
+<part name="BME280" library="bme280" deviceset="BMP180" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12659,6 +12713,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <instance part="U$5" gate="G$1" x="58.42" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.5" y="102.87" size="1.27" layer="95"/>
 </instance>
+<instance part="BME280" gate="G$1" x="223.52" y="55.88" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -12704,6 +12759,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <pinref part="U$5" gate="G$1" pin="VIN"/>
 <wire x1="76.2" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
 <label x="81.28" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="BME280" gate="G$1" pin="VCC"/>
+<wire x1="208.28" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
+<label x="195.58" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3V" class="0">
@@ -12786,6 +12846,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <wire x1="76.2" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
 <label x="93.98" y="96.52" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="BME280" gate="G$1" pin="GND"/>
+<wire x1="208.28" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="91"/>
+<label x="195.58" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -12835,6 +12900,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <wire x1="40.64" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="22.86" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="BME280" gate="G$1" pin="SDA"/>
+<wire x1="208.28" y1="53.34" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
+<label x="195.58" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -12846,6 +12916,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <pinref part="U$5" gate="G$1" pin="IO22"/>
 <wire x1="40.64" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <label x="33.02" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="BME280" gate="G$1" pin="SCL"/>
+<wire x1="208.28" y1="58.42" x2="195.58" y2="58.42" width="0.1524" layer="91"/>
+<label x="195.58" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D3" class="0">

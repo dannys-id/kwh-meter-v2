@@ -12425,8 +12425,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <pad name="14" x="10.15" y="-13.54" drill="1" diameter="1.9304"/>
 <pad name="15" x="12.69" y="-13.54" drill="1" diameter="1.9304"/>
 <pad name="30" x="-22.87" y="11.23" drill="1" diameter="1.9304"/>
-<pad name="29" x="-20.33" y="11.23" drill="1" diameter="1.9304"/>
-<pad name="28" x="-17.79" y="11.23" drill="1" diameter="1.9304"/>
+<pad name="28" x="-20.33" y="11.23" drill="1" diameter="1.9304"/>
+<pad name="280" x="-17.79" y="11.23" drill="1" diameter="1.9304"/>
 <pad name="27" x="-15.25" y="11.23" drill="1" diameter="1.9304"/>
 <pad name="26" x="-12.71" y="11.23" drill="1" diameter="1.9304"/>
 <pad name="25" x="-10.17" y="11.23" drill="1" diameter="1.9304"/>
@@ -12532,7 +12532,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <connect gate="G$1" pin="GND1" pad="28"/>
 <connect gate="G$1" pin="IO1" pad="13"/>
 <connect gate="G$1" pin="IO12" pad="27"/>
-<connect gate="G$1" pin="IO13" pad="28"/>
+<connect gate="G$1" pin="IO13" pad="280"/>
 <connect gate="G$1" pin="IO14" pad="26"/>
 <connect gate="G$1" pin="IO15" pad="3"/>
 <connect gate="G$1" pin="IO16" pad="6"/>
@@ -12544,7 +12544,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <connect gate="G$1" pin="IO22" pad="14"/>
 <connect gate="G$1" pin="IO23" pad="15"/>
 <connect gate="G$1" pin="IO25" pad="23"/>
-<connect gate="G$1" pin="IO26" pad="24"/>
+<connect gate="G$1" pin="IO26" pad="25"/>
 <connect gate="G$1" pin="IO27" pad="24"/>
 <connect gate="G$1" pin="IO3" pad="12"/>
 <connect gate="G$1" pin="IO32" pad="21"/>
@@ -12777,14 +12777,14 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <label x="172.72" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND1"/>
-<wire x1="76.2" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
-<label x="91.44" y="96.52" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="X2" gate="-1" pin="S"/>
 <wire x1="132.08" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="104.14" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND1"/>
+<wire x1="76.2" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
+<label x="93.98" y="96.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
